@@ -1,0 +1,18 @@
+[project]
+name = "Parakeet_ASR"
+version = "0.1.0"
+description = "A high-performance Automatic Speech Recognition (ASR) server built with NVIDIA's NeMo Parakeet model. This application provides both REST API and WebSocket interfaces for transcribing audio files to text."
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "cuda-python==12.8",
+    "fastapi==0.115.12",
+    "nemo-toolkit[asr]==2.2.1",
+    "numpy==1.26.4",
+    "python-dotenv==1.1.0",
+    "python-multipart==0.0.20",
+    "torch==2.7.0",
+    "torchaudio==2.7.0",
+    "uvicorn==0.34.2",
+    "websockets==15.0.1",
+]
