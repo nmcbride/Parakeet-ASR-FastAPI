@@ -21,8 +21,10 @@
       devShells.${system}.default = pkgs.mkShell {
 
         buildInputs = [
-          pkgs.python313
+          pkgs.python312
           pkgs.uv
+          pkgs.gcc
+          pkgs.cmake
         ];
         # No special shell setup needed
       };
